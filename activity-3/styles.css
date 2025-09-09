@@ -1,0 +1,86 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 128, 128);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-container {
+    margin: 100px;
+    border-radius: 10px;
+    border: 3px dotted rgb(168, 0, 0);
+    background-color: rgb(255, 110, 110);
+    padding: 25px;
+}
+
+#greeting-message {
+    color: #71d76d;
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+#greeting-image {
+    margin: 20px auto;
+    display: block;
+    width: 300px;
+    height: 250px;
+    border: 2px solid #71d76d;
+    transition: transform 0.3s ease;
+}
+
+#greeting-image:hover {
+    transform: scale(1.05);
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    background-color: #71d76d;
+    color: rgb(255, 128, 128);
+    border-radius: 4px;
+    border: 1px solid black;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #589f55;
+    color: rgb(232, 116, 116);
+    transform: scale(1.05);
+}
+
+#random {
+    width: 120px;
+}
+
+#personalize-container {
+    display: flex;
+    align-items: center;
+}
+
+#personalize-container input {
+    height: 25px;
+    width: 130px;
+    margin-left: 20px;
+    background-color: #71d76d;
+    border: 1px solid black;
+}
+
+#personalize-container p {
+    color: #71d76d;
+    font-weight: 800;
+}
