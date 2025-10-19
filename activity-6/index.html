@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 6: Interactive To-Do List (Part 2)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Activity 6: Interactive To-Do List (Enhanced)</h1>
+    <div id="tasks-statistics">
+        <p id="tasks-total">Total tasks: </p>
+        <p id="tasks-completed">Completed tasks: </p>
+    </div>
+    <div class="todo-container">
+        <div id="edit-pop-up" class="pop-up">
+            <p id="editText">Editing task: </p>
+            <input id="updateTask" type="text">
+            <select id="updatePrioritySelect">
+                <option value="priority-high">High</option>
+                <option value="priority-medium">Medium</option>
+                <option value="priority-low">Low</option>
+            </select>
+            <button id="updateEditButton">Update task</button>
+            <button id="cancelEditButton">Cancel</button>
+        </div>
+        <div class="input-controls">
+            <input type="text" id="task-input">
+            <select id="prioritySelect">
+                <option value="high">High</option>
+                <option value="medium" selected>Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button id="add-task">Add Task</button>
+        </div>
+        <div class="filter-section">
+            <h3 id="filter-header">Filter Tasks</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+        </div>
+        <ul id="todo-list">
+        </ul>
+        <div id="emptyState" class="empty-state">
+            <p>No tasks yet. Add one above! &#128221;</p>
+        </div>
+    </div>
+    <div class="controls-section">
+        <div class="bulk-actions">
+            <h3>Bulk-actions</h3>
+            <button id="markAllDoneBtn">Mark All Done</button>
+            <button id="deleteCompletedBtn" class="danger">Delete Completed</button>
+            <button id="clearAllBtn" class="danger">Clear All Tasks</button>
+        </div>
+    </div>
+    <div id="output"></div>
+    <script src="demos.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

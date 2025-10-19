@@ -1,0 +1,228 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    color: aliceblue;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 5px;
+}
+
+#tasks-completed,
+#tasks-total {
+    display: inline;
+    margin-left: 30px;
+}
+
+.todo-container {
+    position: relative;
+    width: 30rem;
+    min-height: 15rem;
+    max-height: 30rem;
+    margin: 10px auto;
+    background-color: aliceblue;
+    border: 3px ridge black;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+.pop-up {
+    position: absolute;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    width: inherit;
+    height: 100%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    color: #623e86;
+}
+
+.pop-up p {
+    margin: 0px;
+}
+
+.input-controls {
+    /* height: 75px; */
+    margin: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    height: 20px;
+    font-size: 18px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+select {
+    padding: 7px 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    color: aliceblue;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+option {
+    color: black;
+}
+
+
+#filter-header {
+    margin: 0px;
+    color: #623e86;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn.active {
+    border: 1px solid #405096;
+    background: linear-gradient(45deg, #405096, #623e86);
+}
+
+button {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: aliceblue;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #405096, #623e86);
+    color: rgb(216, 223, 229);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    color: cornflowerblue;
+    padding: 10px;
+    margin: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: transform 0.2s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+li p {
+    margin: 5px;
+}
+
+li:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.task-priority {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.priority-high {
+    background-color: rgb(255, 105, 105);
+}
+
+.priority-medium {
+    background-color: rgb(255, 255, 15);
+}
+
+.priority-low {
+    background-color: rgb(52, 235, 52);
+}
+
+.task-item.completed {
+    background: #00ff3c;
+    color: cornflowerblue;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 7px;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.toggle-btn {
+    background: #63ff97;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+.bulk-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bulk-actions h3 {
+    margin: 0px;
+}
+
+.danger {
+    border-color: #bb2e3c;
+}
+
+.danger:hover {
+    border-color: #ff0019;
+}
+
+#emptyState {
+    color: #764ba2;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .input-controls {
+        flex-direction: column;
+    }
+
+    .bulk-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
