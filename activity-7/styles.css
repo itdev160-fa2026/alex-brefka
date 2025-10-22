@@ -1,0 +1,93 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(146, 232, 155);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 3px;
+}
+
+.catalog-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    background-color: aliceblue;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    font-size: 17px;
+}
+
+.filter-controls {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.active {
+    background-color: rgb(77, 159, 85);
+    color: white;
+}
+
+button {
+    height: 30px;
+    background-color: rgb(146, 232, 155);
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 6px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(115, 185, 122);
+    transform: scale(1.05);
+}
+
+#product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    width: 220px;
+    margin: 10px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0px;
+}
+
+h3 {
+    margin: 2px;
+}
+
+.product-card img {
+    width: 200px;
+    height: 200px;
+}
+
+p {
+    margin: 2px;
+}
